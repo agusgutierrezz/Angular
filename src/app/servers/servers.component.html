@@ -1,0 +1,10 @@
+<h1>I am {{name}}</h1>
+<label for="">Cual es tu nombre?</label>
+<input type="text" class="form-control"
+[(ngModel)] = "userName">
+<p>{{userName}}</p>
+<button 
+class="btn btn-danger" 
+[disabled] = "userName === ''" 
+(click) = "userName = ''"
+>Add Username</button>
